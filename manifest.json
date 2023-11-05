@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "ChatGPT Chrome short",
+  "description": "ChatGPTのショートカットを自作",
+  "permissions": [
+    "tabs"
+  ],
+  "commands": {
+    "addTemplateForErrorLog": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "windows": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "クリップボードからエラーログを張り付けて原因を聞く"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
