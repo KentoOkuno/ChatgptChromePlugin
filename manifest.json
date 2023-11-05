@@ -7,13 +7,37 @@
     "tabs"
   ],
   "commands": {
-    "addTemplateForErrorLog": {
+    "addTemplateToClipBoardForErrorLog": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Y",
-        "windows": "Ctrl+Shift+Y",
-        "mac": "Command+Shift+Y"
+        "default": "Alt+L",
+        "windows": "Alt+L",
+        "mac": "Command+Shift+L"
       },
-      "description": "クリップボードからエラーログを張り付けて原因を聞く"
+      "description": "エラーログから原因を調査する。クリップボード貼付あり"
+    },
+    "addTemplateToClipBoardForCodeAnalysis": {
+      "suggested_key": {
+        "default": "Alt+C",
+        "windows": "Alt+C",
+        "mac": "Command+Shift+U"
+      },
+      "description": "コードの要約とコメント付与を行う。クリップボード貼付あり"
+    },
+    "addTemplateToClipBoardForTextSummary": {
+      "suggested_key": {
+        "default": "Alt+S",
+        "windows": "Alt+S",
+        "mac": "Alt+S"
+      },
+      "description": "テキストを要約して要点をまとめる。クリップボード貼付あり"
+    },
+    "addTemplateForName": {
+      "suggested_key": {
+        "default": "Alt+N",
+        "windows": "Alt+N",
+        "mac": "Alt+N"
+      },
+      "description": "名前案を提示する。"
     }
   },
   "background": {
